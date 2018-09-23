@@ -1,0 +1,27 @@
+/* Header/Title */
+.logo {
+    margin: 30px;
+}
+
+/* Articles */
+label {
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.collapse>label {
+    height: auto;
+}
+
+.collapse p {
+    padding-bottom : 10px;
+    text-align: center;
+}
+
+.articleImg {
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+    display: block;
+    margin: 15px auto;
+    width: 50%;
+}

@@ -72,11 +72,10 @@ app.get("/info", function(req, res) {
             if (img != undefined) {
                 // Insert the data in the scrapedData db
                 console.log(title + ", " + link);
-                db.businessInsider.insert({
-                    title: title,
-                    link: link,
-                    img: img
-                },
+                db.businessInsider.update(
+                    {title : title},
+                    {$set:{"link": link, "img": img}},
+                    {upsert: true},
                 function(err, inserted) {
                     if (err) {
                         // Log the error if one is encountered during the query
@@ -92,7 +91,7 @@ app.get("/info", function(req, res) {
     });
   
     // Send a "Scrape Complete" message to the browser
-    res.send("Scrape Complete");
+    res.redirect("/");
 });
   
 
