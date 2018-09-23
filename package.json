@@ -1,0 +1,29 @@
+{
+  "name": "business-insider-scraper",
+  "version": "1.0.0",
+  "description": "An application that utilizes MongoDB, Mongoose, and Cheerio in order to display news articles from Business Insider and allow for users to comment on the articles.",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Michael-Kim0717/BusinessInsiderScraper.git"
+  },
+  "author": "Michael Kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Michael-Kim0717/BusinessInsiderScraper/issues"
+  },
+  "homepage": "https://github.com/Michael-Kim0717/BusinessInsiderScraper#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mini.css": "^3.0.0",
+    "mongojs": "^2.6.0",
+    "mongoose": "^5.2.17",
+    "request": "^2.88.0"
+  }
+}
