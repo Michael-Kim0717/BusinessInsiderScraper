@@ -53,3 +53,8 @@ button {
 h3 {
     text-align: center;
 }
+
+.comments {
+    margin: 0 auto;
+    width: 50%;
+}
