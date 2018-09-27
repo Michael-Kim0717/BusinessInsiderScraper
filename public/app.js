@@ -23,6 +23,12 @@ $(document).ready(function(){
                         "<a href=" + "#" + "> Comments </a>" +
                     "</p>" +
                     "<img src=" + data[i].img + " class='articleImg'>" +
+                    "<input type='text' placeholder='Name'> <br>" +
+                    "<textarea> </textarea>" +
+                    "<button class='btn'> Submit Comment </button>" +
+                    "<div class=" + "comments" + data[i]._id + ">" +
+                        "<h3> Comments : </h3>" +
+                    "</div>" +
                 "</div>"
             );
         }

@@ -13,6 +13,10 @@ label {
     height: auto;
 }
 
+.collapse>:checked+label+div {
+    max-height: 1000px;
+}
+
 .collapse p {
     padding-bottom : 10px;
     text-align: center;
@@ -24,4 +28,28 @@ label {
     display: block;
     margin: 15px auto;
     width: 50%;
+}
+
+input:not([type]), [type="text"], [type="email"], [type="number"], [type="search"], [type="password"], [type="url"], [type="tel"], [type="checkbox"], [type="radio"], textarea, select {
+    margin: 0 auto;
+}
+
+input {
+    display: block;
+    width: 50%;
+}
+
+textarea {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+}
+
+h3 {
+    text-align: center;
 }
