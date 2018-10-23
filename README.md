@@ -11,12 +11,15 @@ An open platform for individuals to look at Business Insider Articles and commen
 #### BUILT-WITH
 
 ```
+
   Languages and Database :
   
-  JAVASCRIPT
-  JQUERY
-  HTML / CSS / MINI CSS
-  MONGODB
+  Javascript
+  JQuery
+  Node
+  Express
+  HTML / CSS / MiniCSS
+  MongoDB
   
   Node Packages :
  
@@ -26,6 +29,7 @@ An open platform for individuals to look at Business Insider Articles and commen
   express : fast, unopinionated, minimalist web framework for node
   mongoose : a MongoDB object modeling tool designed to work in an asynchronous environment
   request : designed to be the simplest way possible to make http calls
+  
 ```
 
 ##### SAMPLE DATA
@@ -34,12 +38,12 @@ All articles are received using cheerio to fit the following schema/format :
 
 ```json
 articleObject {
-  title : TITLE-OF-ARTICLE,
-  link : LINK-TO-ARTICLE,
-  image : IMAGE-LINK,
-  comment : [{
-    name : NAME-OF-PERSON,
-    comment : PERSONS-COMMENT
+  "title" : "TITLE-OF-ARTICLE",
+  "link" : "LINK-TO-ARTICLE",
+  "image" : "IMAGE-LINK",
+  "comment" : [{
+    "name" : "NAME-OF-PERSON",
+    "comment" : "PERSONS-COMMENT"
   }]
 }
 ```
